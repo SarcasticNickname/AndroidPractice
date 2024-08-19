@@ -87,7 +87,6 @@ class GameView @JvmOverloads constructor(
         val score = snake.getBody().size
         scoreTextView.text = "Your Score: $score"
 
-        // Настраиваем изображение, если нужно (например, смена картинки при разных условиях)
         gameOverImage.setImageResource(R.drawable.game_over_image)
 
         // Создаём диалог
@@ -119,12 +118,6 @@ class GameView @JvmOverloads constructor(
 
         if (maxX > 0 && maxY > 0) {
             apple = Apple(segmentSize, (0 until maxX).random(), (0 until maxY).random())
-        }
-    }
-
-    fun growSnake() {
-        if (isRunning && !isGameOver) {
-            snake.grow()
         }
     }
 

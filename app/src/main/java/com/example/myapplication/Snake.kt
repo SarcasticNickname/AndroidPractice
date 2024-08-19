@@ -14,7 +14,6 @@ class Snake {
             Direction.DOWN -> Pair(body[0].first, body[0].second + 1)
             Direction.LEFT -> Pair(body[0].first - 1, body[0].second)
             Direction.RIGHT -> Pair(body[0].first + 1, body[0].second)
-            Direction.STOP -> TODO()
         }
 
         for (i in body.size - 1 downTo 1) {
