@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="left">left</string>
+    <string name="up">up</string>
+    <string name="down">down</string>
+    <string name="right">right</string>
+</resources>
